@@ -9,7 +9,7 @@ Step 1. Please copy the following code and paste it above the closing </html> ta
 <div id="chatwidget">
     <button class="open-button" onclick="openForm()">Chat</button>
     <div class="chat-popup" id="myForm">
-        <iframe id="chatIframe" src="http://107.173.42.149:3000/yorao/chat"
+        <iframe id="chatIframe" src="http://localhost:3000/yorao/chat"
             style="border:5px #ffffff none; position: fixed;bottom: 0; right: 0;" name="myiFrame" scrolling="no"
             frameborder="10" marginheight="0px" marginwidth="0px" height="750px" width="500px" allowfullscreen>
         </iframe>
