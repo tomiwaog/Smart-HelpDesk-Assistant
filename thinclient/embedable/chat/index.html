@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="iframe.css" />
+</head>
+
+<body>
+    <h2>Use the README file on how to add similar pop up to your websites</h2>
+    <div id="chatwidget">
+        <button class="open-button" onclick="openForm()">Chat</button>
+        <div class="chat-popup" id="myForm">
+            <!-- <iframe id="chatIframe" src="http://localhost:3000/yorao/chat"
+                style="border:5px #ffffff none; position: fixed;bottom: 0; right: 0;" name="myiFrame" scrolling="no"
+                frameborder="10" marginheight="0px" marginwidth="0px" height="700px" width="500px" >
+            </iframe> -->
+            <iframe id="chatIframe" src="http://lcoalhost:3000/yorao/chat" style="border:5px #ffffff none;"
+                name="myiFrame" scrolling="no" frameborder="10" marginheight="0px" marginwidth="0px" height="700px"
+                width="500px" allowfullscreen>
+            </iframe>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
